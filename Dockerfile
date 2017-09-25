@@ -1,5 +1,5 @@
-FROM frodenas/java7
-MAINTAINER Ferran Rodenas <frodenas@gmail.com>
+FROM openjdk:8u121-jdk-alpine
+MAINTAINER Anish Kuti <anish.kuti@gmail.com>
 
 # Install Elasticsearch 1.3.1
 RUN cd /tmp && \
