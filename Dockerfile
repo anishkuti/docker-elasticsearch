@@ -6,9 +6,8 @@ WORKDIR /app
 
 
 # Install Elasticsearch 1.3.1
-RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.1.tar.gz && \
-    tar xvzf elasticsearch-5.6.1.tar.gz && \
-    mv /app/elasticsearch-5.6.1 /app/elasticsearch
+RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.1.tar.gz
+RUN tar xvzf elasticsearch-5.6.1.tar.gz
 
 # Add scripts
 ADD scripts /scripts
