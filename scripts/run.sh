@@ -2,4 +2,4 @@
 
 # Start Elasticsearch
 echo "Starting Elasticsearch..."
-/app/elasticsearch/bin/elasticsearch -Des.default.path.data=/data -Des.default.path.logs=/logs
+/app/elasticsearch-5.6.1/bin/elasticsearch -Des.default.path.data=/data -Des.default.path.logs=/logs
