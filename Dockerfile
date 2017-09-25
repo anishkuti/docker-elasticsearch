@@ -2,12 +2,13 @@ FROM openjdk:8u121-jdk-alpine
 MAINTAINER Anish Kuti <anish.kuti@gmail.com>
 
 RUN mkdir /app
+WORKDIR /app
+
 
 # Install Elasticsearch 1.3.1
-RUN cd /app && \
-    wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.1.tar.gz && \
+RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.6.1.tar.gz && \
     tar xvzf elasticsearch-5.6.1.tar.gz && \
-    mv /app/elasticsearch-5.6.1 /elasticsearch
+    mv /app/elasticsearch-5.6.1 /app/elasticsearch
 
 # Add scripts
 ADD scripts /scripts
