@@ -2,6 +2,8 @@ FROM openjdk:8u121-jdk-alpine
 MAINTAINER Anish Kuti <anish.kuti@gmail.com>
 
 RUN mkdir /app
+RUN chmod -R 777 /app
+
 WORKDIR /app
 
 
